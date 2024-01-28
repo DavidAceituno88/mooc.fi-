@@ -10,10 +10,14 @@ def square(t):
 def main():
     
     for n in range(1,11):
-        if(square(n) > triple(n)):
-            break
+        a = triple(n)
+        b = square(n)
+        if(b <= a):
+            print(f"triple({n})=={a} square({n})=={b}")
         else:
-            print("triple(",n,") == ",triple(n), "square(",n,") == ",square(n))
+            
+            break
+            
     pass
 
 if __name__ == "__main__":
