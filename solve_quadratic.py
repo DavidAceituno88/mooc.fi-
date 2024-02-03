@@ -5,10 +5,10 @@ import math
 def solve_quadratic(a, b, c):
     root = (b**2)-(4*a*c)
           
-    a = ((-b + math.sqrt(root))/(2*a))
-    b = ((-b - math.sqrt(root))/(2*a))
+    pos = ((-b + math.sqrt(root))/(2*a))
+    neg = ((-b - math.sqrt(root))/(2*a))
     
-    return (a,b)
+    return (pos,neg)
 
 
 def main():
