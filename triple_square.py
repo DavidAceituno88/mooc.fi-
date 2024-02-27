@@ -12,7 +12,7 @@ def main():
     for n in range(1,11):
         a = triple(n)
         b = square(n)
-        if(b <= a):
+        if (b <= a):
             print(f"triple({n})=={a} square({n})=={b}")
         else:
             
